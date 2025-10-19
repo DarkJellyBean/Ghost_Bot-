@@ -197,7 +197,14 @@ async def rolesetup(ctx, *, roles_text: str = ""):
         color=discord.Color.purple(),
     )
     view = RoleMenuView(roles)
-    await ctx.send(embed=embed, view=view)
+    await ctx.send(f"⚠️ Error: {error}")
+
+# --- ROLE MENU SYSTEM ---
+# [paste all of it here, from start to end]
+# --- end of block ---
+
+# ===== RUN =====
+if __name__ == "__main__":
 
 # ====== ERROR HANDLER (clean messages) ======
 @bot.event
